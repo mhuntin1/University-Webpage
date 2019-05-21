@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Semester:</strong>
+  <%= @section.Semester %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @section.Number %>
+</p>
+
+<p>
+  <strong>Room number:</strong>
+  <%= @section.Roon_Number %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @section.course_id %>
+</p>
+
+<p>
+  <strong>Students:</strong>
+  <%= @student.Name %>
+</p>
+
+
+<%= link_to 'Edit', edit_section_path(@section) %> |
+<%= link_to 'Back', sections_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @section_student.Section %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @section_student.Student %>
+</p>
+
+<%= link_to 'Edit', edit_section_student_path(@section_student) %> |
+<%= link_to 'Back', section_students_path %>

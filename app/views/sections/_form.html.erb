@@ -1,0 +1,43 @@
+<%= form_with(model: section, local: true) do |form| %>
+  <% if section.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(section.errors.count, "error") %> prohibited this section from being saved:</h2>
+
+      <ul>
+      <% section.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Semester %>
+    <%= form.text_field :Semester, id: :section_Semester %>
+  </div>
+
+  <div class="field">
+  <%= form.label :Courses %>
+  <%= collection_select(:section, :course_id, Course.all, :id, :Name) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Number %>
+    <%= form.text_field :Number, id: :section_Number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Roon_Number %>
+    <%= form.text_field :Roon_Number, id: :section_Roon_Number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :course_id %>
+    <%= form.number_field :course_id, id: :section_course_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>

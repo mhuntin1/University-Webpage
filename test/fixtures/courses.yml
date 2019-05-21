@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Department: MyString
+  Number: MyString
+  Credit_Hours: 1
+
+two:
+  Name: MyString
+  Department: MyString
+  Number: MyString
+  Credit_Hours: 1
